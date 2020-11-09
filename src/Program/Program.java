@@ -7,6 +7,6 @@ public class Program {
         do {    db.list(date);
                 System.out.println("Escolha alguma tarefa para interagir\nOu 0 para sair e \"novo\" para criar uma nova tarefa"); option = scanner.nextLine();
                 if (!option.toLowerCase().equals("0")) if (option.toLowerCase().equals("novo")) Assignment.createAssignment(db, scanner);
-                else try { Assignment.assignmentWorkspace(db, scanner, option);} catch (Exception e) { System.out.println("Tarefa não encontrada!");
+                else try { Assignment.assignmentWorkspace(db, scanner, option); } catch (Exception e) { System.out.println("Tarefa não encontrada!");
                 }} while (!option.equals("0")); }
 }
